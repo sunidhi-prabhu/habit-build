@@ -34,8 +34,9 @@ Codebase for Habit-Build, a responsive MERN stack web app designed to foster per
    git clone https://github.com/sunidhi-prabhu/habit-build.git
    cd habit-build
 
-   **By satyam-spb and sunidhi-prabhu**
    ```
+
+   **By satyam-spb and sunidhi-prabhu**
 
 **Connect**:
 

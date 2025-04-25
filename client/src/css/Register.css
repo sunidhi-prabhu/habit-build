@@ -1,0 +1,123 @@
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.register-card {
+  background: rgba(248, 241, 233, 0.9);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  animation: scaleIn 0.5s ease-in-out;
+}
+
+.register-card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #FFD700, #FF6B6B);
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.register-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2D1B1B;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.register-error {
+  color: #E63946;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 1.1rem;
+  color: #2D1B1B;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #ffffff;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.3);
+}
+
+.btn-submit {
+  padding: 1rem;
+  background: linear-gradient(45deg, #FFD700, #FF6B6B);
+  color: #F8F1E9;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.register-link {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.register-link a {
+  color: #FF6B6B;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .register-card {
+    padding: 2rem;
+  }
+
+  .register-title {
+    font-size: 2rem;
+  }
+}
